@@ -8,6 +8,7 @@ import {
     returnAsAnArray,
     returnAsAString,
     getSecondItem,
+    getLastItem,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
@@ -175,7 +176,7 @@ test('this test should take an array and return the second item in the array', (
 test('this test should take an array and return the last item in the array, no matter the arrays length', (expect) => {
     const expected = 'plum';
 
-    const actual = ['kiwi', 'apple', 'orange', 'plum'];
+    const actual = getLastItem(['kiwi', 'apple', 'orange', 'plum']);
 
     expect.equal(actual, expected);
 });
