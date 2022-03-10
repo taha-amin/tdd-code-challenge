@@ -15,19 +15,19 @@ test('this test should take a string and add return a new string that adds three
 
     const actual = addExclamationPoints('bunny rabbit');
 
-    expect.equal(actual, expected);
+    expect.equal(actual, expected, 'this test takes bunny rabbit and outputs bunny rabbit!!!');
 
     const expected2 = 'hello world!!!';
 
     const actual2 = addExclamationPoints('hello world');
 
-    expect.equal(actual2, expected2);
+    expect.equal(actual2, expected2, 'this test take hello world and outputs hello world!!!');
 
-    const expected3 = 'test!!!';
+    const expected3 = 'name!!!';
 
-    const actual3 = addExclamationPoints('test');
+    const actual3 = addExclamationPoints('name');
 
-    expect.equal(actual3, expected3);
+    expect.equal(actual3, expected3, 'this test takes name and outputs name!!!');
 });
 
 test('this test should take in a number and multiply it by seven', (expect) => {
@@ -35,19 +35,19 @@ test('this test should take in a number and multiply it by seven', (expect) => {
 
     const actual = multiplyBySeven(4);
 
-    expect.equal(actual, expected);
+    expect.equal(actual, expected, 'this test takes 4 and multiplies it by 7 to get 28');
 
     const expected2 = 7;
 
     const actual2 = multiplyBySeven(1);
 
-    expect.equal(actual2, expected2);
+    expect.equal(actual2, expected2, 'this test takes 1 and multiplies it by 7 to get 7');
 
     const expected3 = 49;
 
     const actual3 = multiplyBySeven(7);
 
-    expect.equal(actual3, expected3);
+    expect.equal(actual3, expected3, 'this test takes 7 and multiplies it by 7 to get 49');
 });
 
 test('this test should take in a number and multiply it by twelve then cut the result in half', (expect) => {
@@ -55,19 +55,19 @@ test('this test should take in a number and multiply it by twelve then cut the r
 
     const actual = multiplyBy12ThenHalve(4);
 
-    expect.equal(actual, expected);
+    expect.equal(actual, expected, 'this test takes 4 multiplies it by 12, halves it, and outputs 24');
 
     const expected2 = 6;
 
     const actual2 = multiplyBy12ThenHalve(1);
 
-    expect.equal(actual2, expected2);
+    expect.equal(actual2, expected2, 'this test takes 1, multiplies it by 12, halves it, and outputs 6');
 
     const expected3 = 18;
 
     const actual3 = multiplyBy12ThenHalve(3);
 
-    expect.equal(actual3, expected3);
+    expect.equal(actual3, expected3, 'this test takes 3, multiplies it by 12, halves it, and returns 18');
 });
 
 test('this test should take in two number and return a greeting that the sum of those numbers is todays lucky number', (expect) => {
@@ -75,19 +75,19 @@ test('this test should take in two number and return a greeting that the sum of 
 
     const actual = makeLuckyGreeting(8, 4);
 
-    expect.equal(actual, expected);
+    expect.equal(actual, expected, 'this test takes the numbers 8 and 4 and outputs Hello! Your lucky number for the day is 12');
 
     const expected2 = 'Hello! Your lucky number for the day is 2';
 
     const actual2 = makeLuckyGreeting(1, 1);
 
-    expect.equal(actual2, expected2);
+    expect.equal(actual2, expected2, 'this test takes the numbers 1 and 1 and outputs Hello! Your lucky number for the day is 2');
 
     const expected3 = 'Hello! Your lucky number for the day is 14';
 
     const actual3 = makeLuckyGreeting(7, 7);
 
-    expect.equal(actual3, expected3);
+    expect.equal(actual3, expected3, 'this test takes the numbers 7 and 7 and outputs Hello! Your lucky number for the day is 14');
 });
 
 test('this test should take in three numbers, divide the first by the second, then multiply the result by the third', (expect) => {
@@ -95,13 +95,13 @@ test('this test should take in three numbers, divide the first by the second, th
 
     const actual = divideThenMultiply(8, 4, 5);
 
-    expect.equal(actual, expected);
+    expect.equal(actual, expected, 'this test takes in [8, 4, 5] divides 8 and 4, then multiplies the result by 5 to return 10');
 
     const expected2 = 9;
 
     const actual2 = divideThenMultiply(6, 2, 3);
 
-    expect.equal(actual2, expected2);
+    expect.equal(actual2, expected2, 'this test takes in [6, 2, 3] divides 6 and 2, then multiplies the result by 3 to return 9');
 
     const expected3 = 40;
 
