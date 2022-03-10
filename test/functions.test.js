@@ -116,6 +116,18 @@ test('this test should take in three numbers and return those numbers in an arra
     const actual = returnAsAnArray(8, 4, 5);
 
     expect.deepEqual(actual, expected);
+
+    const expected2 = [1, 2, 3];
+
+    const actual2 = returnAsAnArray(1, 2, 3);
+
+    expect.deepEqual(actual2, expected2);
+
+    const expected3 = [0, 4, 7];
+
+    const actual3 = returnAsAnArray(0, 4, 7);
+
+    expect.deepEqual(actual3, expected3);
 });
 
 
