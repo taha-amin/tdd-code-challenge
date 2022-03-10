@@ -55,6 +55,18 @@ test('this test should take in a number and multiply it by twelve then cut the r
     const actual = multiplyBy12ThenHalve(4);
 
     expect.equal(actual, expected);
+
+    const expected2 = 6;
+
+    const actual2 = multiplyBy12ThenHalve(1);
+
+    expect.equal(actual2, expected2);
+
+    const expected3 = 18;
+
+    const actual3 = multiplyBy12ThenHalve(3);
+
+    expect.equal(actual3, expected3);
 });
 
 test('this test should take in two number and return a greeting that the sum of those numbers is todays lucky number', (expect) => {
