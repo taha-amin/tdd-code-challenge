@@ -107,7 +107,7 @@ test('this test should take in three numbers, divide the first by the second, th
 
     const actual3 = divideThenMultiply(8, 1, 5);
 
-    expect.equal(actual3, expected3);
+    expect.equal(actual3, expected3, 'this test takes in [8, 1, 5] divides 8 and 1, then multiplies the result by 5 to return 40');
 });
 
 test('this test should take in three numbers and return those numbers in an array', (expect) => {
@@ -115,19 +115,19 @@ test('this test should take in three numbers and return those numbers in an arra
 
     const actual = returnAsAnArray(8, 4, 5);
 
-    expect.deepEqual(actual, expected);
+    expect.deepEqual(actual, expected, 'this test takes in 8, 4, 5, and returns [8, 4, 5]');
 
     const expected2 = [1, 2, 3];
 
     const actual2 = returnAsAnArray(1, 2, 3);
 
-    expect.deepEqual(actual2, expected2);
+    expect.deepEqual(actual2, expected2, 'this test takes in 1, 2, 3, and returns [1, 2, 3]');
 
     const expected3 = [0, 4, 7];
 
     const actual3 = returnAsAnArray(0, 4, 7);
 
-    expect.deepEqual(actual3, expected3);
+    expect.deepEqual(actual3, expected3, 'this test takes in 0, 4, 7, and returns [0, 4, 7]');
 });
 
 
