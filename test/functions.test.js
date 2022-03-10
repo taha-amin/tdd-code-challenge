@@ -136,7 +136,19 @@ test('this test should take in 3 numbers and return the numbers mushed together 
 
     const actual = returnAsAString(8, 4, 5);
 
-    expect.equal(actual, expected);
+    expect.deepEqual(actual, expected, 'this test takes in 8, 4, 5 and returns 845');
+
+    const expected2 = '123';
+
+    const actual2 = returnAsAString(1, 2, 3);
+
+    expect.deepEqual(actual2, expected2, 'this test takes in 1, 2, 3 and returns 123');
+
+    const expected3 = '997';
+
+    const actual3 = returnAsAString(9, 9, 7);
+
+    expect.deepEqual(actual3, expected3, 'this test takes in 9, 9, 7 and returns 997');
 });
 
 
