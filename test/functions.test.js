@@ -9,6 +9,7 @@ import {
     returnAsAString,
     getSecondItem,
     getLastItem,
+    getRandomNumber,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
@@ -179,6 +180,14 @@ test('this test should take an array and return the last item in the array, no m
     const actual = getLastItem(['kiwi', 'apple', 'orange', 'plum']);
 
     expect.equal(actual, expected);
+});
+
+test('this function should return a random number between 0 and 5', (expect) => {
+    const expected = true;
+
+    const actual = getRandomNumber
+
+    expect.equal(actual, true);
 });
 
 
