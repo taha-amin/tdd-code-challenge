@@ -172,6 +172,14 @@ test('this test should take an array and return the second item in the array', (
     expect.equal(actual3, expected3, 'this test takes in [first, second, orange, plum] and returns second');
 });
 
+test('this test should take an array and return the last item in the array, no matter the arrays length', (expect) => {
+    const expected = 'plum';
+
+    const actual = ['kiwi', 'apple', 'orange', 'plum'];
+
+    expect.equal(actual, expected);
+});
+
 
 skip('this test should be skipped', (expect) => {
     const expected = true;
