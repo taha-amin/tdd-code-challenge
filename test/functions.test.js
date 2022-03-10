@@ -7,6 +7,7 @@ import {
     divideThenMultiply,
     returnAsAnArray,
     returnAsAString,
+    getSecondItem,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
@@ -149,6 +150,14 @@ test('this test should take in 3 numbers and return the numbers mushed together 
     const actual3 = returnAsAString(9, 9, 7);
 
     expect.deepEqual(actual3, expected3, 'this test takes in 9, 9, 7 and returns 997');
+});
+
+test('this test should take an array and return the second item in the array', (expect) => {
+    const expected = 'apple';
+
+    const actual = getSecondItem(['kiwi', 'apple', 'orange', 'plum']);
+
+    expect.equal(actual, expected);
 });
 
 
