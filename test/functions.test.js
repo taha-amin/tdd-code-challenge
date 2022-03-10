@@ -9,11 +9,11 @@ import {
 const { test, skip } = QUnit;
 
 test('this test should take a string and add return a new string that adds three exclamation points to the argument', (expect) => {
-    const expected = 'bunny rabbit';
+    const expected = 'bunny rabbit!!!';
 
     const actual = addExclamationPoints('bunny rabbit');
 
-    expect.actual(actual, expected);
+    expect.equal(actual, expected);
 });
 
 test('this test should take in a number and multiply it by seven', (expect) => {
