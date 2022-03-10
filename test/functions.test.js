@@ -4,6 +4,7 @@ import {
     makeLuckyGreeting,
     multiplyBy12ThenHalve,
     multiplyBySeven,
+    divideThenMultiply,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
@@ -14,6 +15,18 @@ test('this test should take a string and add return a new string that adds three
     const actual = addExclamationPoints('bunny rabbit');
 
     expect.equal(actual, expected);
+
+    const expected2 = 'hello world!!!';
+
+    const actual2 = addExclamationPoints('hello world');
+
+    expect.equal(actual2, expected2);
+
+    const expected3 = 'test!!!';
+
+    const actual3 = addExclamationPoints('test');
+
+    expect.equal(actual3, expected3);
 });
 
 test('this test should take in a number and multiply it by seven', (expect) => {
@@ -36,6 +49,14 @@ test('this test should take in two number and return a greeting that the sum of 
     const expected = 'Hello! Your lucky number for the day is 12';
 
     const actual = makeLuckyGreeting(8, 4);
+
+    expect.equal(actual, expected);
+});
+
+test('this test should take in three numbers, divide the first by the second, then multiply the result by the third', (expect) => {
+    const expected = 10;
+
+    const actual = divideThenMultiply(8, 4, 5);
 
     expect.equal(actual, expected);
 });
