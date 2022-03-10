@@ -183,11 +183,11 @@ test('this test should take an array and return the last item in the array, no m
 });
 
 test('this function should return a random number between 0 and 5', (expect) => {
-    const expected = true;
+    const actual = getRandomNumber();
 
-    const actual = getRandomNumber
+    const expected = [1, 2, 3, 4, 5].includes(actual);
 
-    expect.equal(actual, true);
+    expect.equal(true, expected);
 });
 
 
