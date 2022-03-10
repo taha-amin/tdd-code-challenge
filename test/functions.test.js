@@ -187,7 +187,7 @@ test('this function should return a random number between 0 and 5', (expect) => 
 
     const expected = [1, 2, 3, 4, 5].includes(actual);
 
-    expect.equal(true, expected);
+    expect.equal(true, expected, 'this test returns a random number between 0 and 5 and always returns TRUE');
 });
 
 
