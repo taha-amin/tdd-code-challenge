@@ -158,6 +158,18 @@ test('this test should take an array and return the second item in the array', (
     const actual = getSecondItem(['kiwi', 'apple', 'orange', 'plum']);
 
     expect.equal(actual, expected);
+
+    const expected2 = 'world';
+
+    const actual2 = getSecondItem(['hello', 'world', 'orange', 'plum']);
+
+    expect.equal(actual2, expected2);
+
+    const expected3 = 'second';
+
+    const actual3 = getSecondItem(['first', 'second', 'orange', 'plum']);
+
+    expect.equal(actual3, expected3);
 });
 
 
