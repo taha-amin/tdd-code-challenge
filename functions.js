@@ -12,8 +12,8 @@ Output:
 
 */
 
-export function addExclamationPoints() {
-    return true;
+export function addExclamationPoints(string) {
+    return (string + ' !!!');
 }
 
 // This function should take in a number and multiply it by seven
@@ -29,8 +29,8 @@ Output:
 */
 
 export function multiplyBySeven(num) {
-    num = num * 7;
-    return true;
+    //num = num * 7;
+    return num * 7;
 }
 
 // This function should take in a number and multiply it by twelve then cut the result in half
@@ -47,8 +47,8 @@ Output:
 */
 
 export function multiplyBy12ThenHalve(num) {
-    num = (num * 12) / 2;
-    return true;
+    return num = (num * 12) / 2;
+    //return true;
 }
 
 
@@ -115,8 +115,8 @@ Output:
 */
 
 export function makeLuckyGreeting(firstNumber, secondNumber) {
-    console.log('Hello! Your lucky number for the day is ' + (firstNumber + secondNumber) + '.');
-    return true;
+    return ('Hello! Your lucky number for the day is ' + (firstNumber + secondNumber));
+    //return true;
 }
 
 // This function should take an array and return the second item in the array
