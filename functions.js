@@ -29,6 +29,7 @@ Output:
 */
 
 export function multiplyBySeven(num) {
+    num = num * 7;
     return true;
 }
 
@@ -46,6 +47,7 @@ Output:
 */
 
 export function multiplyBy12ThenHalve(num) {
+    num = (num * 12) / 2;
     return true;
 }
 
