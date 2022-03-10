@@ -75,6 +75,18 @@ test('this test should take in two number and return a greeting that the sum of 
     const actual = makeLuckyGreeting(8, 4);
 
     expect.equal(actual, expected);
+
+    const expected2 = 'Hello! Your lucky number for the day is 2';
+
+    const actual2 = makeLuckyGreeting(1, 1);
+
+    expect.equal(actual2, expected2);
+
+    const expected3 = 'Hello! Your lucky number for the day is 14';
+
+    const actual3 = makeLuckyGreeting(7, 7);
+
+    expect.equal(actual3, expected3);
 });
 
 test('this test should take in three numbers, divide the first by the second, then multiply the result by the third', (expect) => {
