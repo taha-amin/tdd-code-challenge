@@ -65,6 +65,7 @@ Output:
 */
 
 export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
+
     return true;
 }
 
@@ -114,6 +115,7 @@ Output:
 */
 
 export function makeLuckyGreeting(firstNumber, secondNumber) {
+    console.log('Hello! Your lucky number for the day is ' + (firstNumber + secondNumber) + '.');
     return true;
 }
 

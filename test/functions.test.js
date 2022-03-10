@@ -1,5 +1,6 @@
 // IMPORT MODULES under test here:
 import { 
+    makeLuckyGreeting,
     multiplyBy12ThenHalve,
     multiplyBySeven,
 } from '../functions.js';
@@ -18,6 +19,14 @@ test('this test should take in a number and multiply it by twelve then cut the r
     const expected = true;
 
     const actual = multiplyBy12ThenHalve();
+
+    expect.equal(actual, expected);
+});
+
+test('this test should take in two number and return a greeting that the sum of those numbers is todays lucky number', (expect) => {
+    const expected = true;
+
+    const actual = makeLuckyGreeting();
 
     expect.equal(actual, expected);
 });
