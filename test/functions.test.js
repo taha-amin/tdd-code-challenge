@@ -35,6 +35,18 @@ test('this test should take in a number and multiply it by seven', (expect) => {
     const actual = multiplyBySeven(4);
 
     expect.equal(actual, expected);
+
+    const expected2 = 7;
+
+    const actual2 = multiplyBySeven(1);
+
+    expect.equal(actual2, expected2);
+
+    const expected3 = 49;
+
+    const actual3 = multiplyBySeven(7);
+
+    expect.equal(actual3, expected3);
 });
 
 test('this test should take in a number and multiply it by twelve then cut the result in half', (expect) => {
